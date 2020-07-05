@@ -54,6 +54,12 @@ def main():
             print('3调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
             num1+=1
+            print('4调用成功'+str(num1)+'次') 
+        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
+            num1+=1
+            print('8调用成功'+str(num1)+'次')
+        if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
+            num1+=1
             print('4调用成功'+str(num1)+'次')
         if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
             num1+=1
@@ -64,15 +70,18 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages/delta',headers=headers).status_code == 200:
             num1+=1
             print('7调用成功'+str(num1)+'次')
-        if req.get(r'https://graph.microsoft.com/v1.0/me/drive/root/children',headers=headers).status_code == 200:
-            num1+=1
-            print('8调用成功'+str(num1)+'次')
         if req.get(r'https://api.powerbi.com/v1.0/myorg/apps',headers=headers).status_code == 200:
             num1+=1
             print('8调用成功'+str(num1)+'次') 
         if req.get(r'https://graph.microsoft.com/v1.0/me/mailFolders',headers=headers).status_code == 200:
             num1+=1
             print('9调用成功'+str(num1)+'次')
+        if req.get(r'https://graph.microsoft.com/v1.0/me/messages',headers=headers).status_code == 200:
+            num1+=1
+            print('5调用成功'+str(num1)+'次')
+        if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
+            num1+=1
+            print('4调用成功'+str(num1)+'次') 
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
             print('10调用成功'+str(num1)+'次')
