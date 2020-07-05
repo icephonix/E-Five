@@ -81,6 +81,6 @@ def main():
         print("pass")
         pass
 for _ in range(5):
-    randtime1 = random.randint(300,800)
+    randtime1 = random.randint(60,300)
     time.sleep(randtime1)
     main()
