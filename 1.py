@@ -22,7 +22,7 @@ def gettoken(refresh_token):
           'refresh_token': refresh_token,
           'client_id':id,
           'client_secret':secret,
-          'redirect_uri':'http://localhost:53682/'
+          'redirect_uri':'http://localhost:55555/'
          }
     html = req.post('https://login.microsoftonline.com/common/oauth2/v2.0/token',data=data,headers=headers)
     jsontxt = json.loads(html.text)
@@ -80,5 +80,5 @@ def main():
     except:
         print("pass")
         pass
-for _ in range(3):
+for _ in range(5):
     main()
