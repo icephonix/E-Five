@@ -82,6 +82,9 @@ def main():
         if req.get(r'https://graph.microsoft.com/v1.0/users ',headers=headers).status_code == 200:
             num1+=1
             print('4调用成功'+str(num1)+'次') 
+        if req.get(r'https://graph.microsoft.com/v1.0/me/messages?$filter=importance eq 'high'',headers=headers).status_code == 200:
+            num1+=1
+            print('new 调用成功'+str(num1)+'次')     
         if req.get(r'https://graph.microsoft.com/v1.0/me/outlook/masterCategories',headers=headers).status_code == 200:
             num1+=1
             print('10调用成功'+str(num1)+'次')
