@@ -37,6 +37,7 @@ def main():
     fo.close()
     global num1
     localtime = time.asctime( time.localtime(time.time()) )
+    print('此次运行开始时间为 :', localtime)
     access_token=gettoken(refresh_token)
     headers={
     'Authorization':access_token,
