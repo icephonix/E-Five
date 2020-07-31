@@ -11,7 +11,7 @@ on:
   #  branches: 
   #    - master
   schedule:
-    - cron: '50 8,9,10,11,12,13,14,15,16,17 * * 1-5'
+    - cron: '50 8,9,22,11,12,13,14,15,16,17 * * 1-5'
   watch:
     types: [started]
    
