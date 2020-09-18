@@ -1,4 +1,4 @@
-#自动调用api保活，加密版
+#自动调用api保活，加密版  0-23 改为1-9
 name: Auto Api Secret
 on: 
   release:
