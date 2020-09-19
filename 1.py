@@ -96,7 +96,7 @@ def main():
     except:
         print("pass")
         pass
-for _ in range(5):
+for _ in range(15):
     randtime1 = random.randint(60,300)
     time.sleep(randtime1)
     main()
